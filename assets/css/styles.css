@@ -14,3 +14,9 @@ body {
     height: auto;
 }
 
+button {
+    background-color: #1B263B;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 1%;
+}
