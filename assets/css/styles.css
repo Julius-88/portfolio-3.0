@@ -20,3 +20,9 @@ button {
     border-radius: 5px;
     margin: 1%;
 }
+
+.self-portrait {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
