@@ -9,20 +9,43 @@ body {
     background-color: #0D1B2A;
 }
 
+
+.banner {
+    position: relative;
+}
+
 .logo {
     width: 100%;
     height: auto;
 }
+
+
+.self-portrait {
+    position: absolute;
+    bottom: -75px;
+    left: 50%;
+    transform: translate(-50%) ;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/* -----------------------------------------------BUTTONS */
 
 button {
     background-color: #1B263B;
     padding: 10px;
     border-radius: 5px;
     margin: 1%;
+    width: 100px;
 }
 
-.self-portrait {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+.buttons {
+    margin-top: 100px;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
