@@ -9,6 +9,8 @@ body {
     background-color: #0D1B2A;
 }
 
+/* -----------------------------------------------HERO-SECTION */
+
 
 .banner {
     position: relative;
@@ -19,15 +21,27 @@ body {
     height: auto;
 }
 
-
 .self-portrait {
     position: absolute;
     bottom: -75px;
     left: 50%;
-    transform: translate(-50%) ;
+    transform: translate(-50%);
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    object-fit: cover;
+}
+
+/* -----------------------------------------------ABOUT ME */
+
+.about-me {
+    background-color: #1b263b;
+    padding: 10px;
+}
+
+p {
+    margin: 10px;
+    letter-spacing: 2px;
 }
 
 /* -----------------------------------------------BUTTONS */
@@ -36,12 +50,13 @@ button {
     background-color: #1B263B;
     padding: 10px;
     border-radius: 5px;
-    margin: 1%;
+    margin: 5px;
     width: 100px;
 }
 
 .buttons {
     margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 .flex-center {
