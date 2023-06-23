@@ -113,6 +113,11 @@ button {
     width: 100px;
 }
 
+button:hover {
+    box-shadow: 0px 0px 5px rgb(224, 225, 221, 0.5);
+    cursor: pointer;
+}
+
 .buttons {
     margin-top: 100px;
     margin-bottom: 50px;
