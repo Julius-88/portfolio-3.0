@@ -10,3 +10,10 @@ The colors are the following:
 - Text-color: #e0e1dd;
 
 ![Color Palette](./assets/img/portfolio-color-palette.PNG)
+
+
+## Favicon
+
+I used <a href="https://realfavicongenerator.net/" target="_blank" rel="noopener noreferrer">RealFavicon Generator</a> to create a favicon images for my website for all devices.
+
+![Favicon](./assets/img/favicon-img.PNG)
