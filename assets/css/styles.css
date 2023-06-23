@@ -99,6 +99,10 @@ a {
     text-decoration: none;
 }
 
+figcaption {
+    padding: 5px;
+}
+
 /* -----------------------------------------------BUTTONS */
 
 button {
