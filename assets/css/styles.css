@@ -12,11 +12,11 @@ body {
 /* -----------------------------------------------HERO-SECTION */
 
 
-.banner {
+.hero-section {
     position: relative;
 }
 
-.logo {
+.banner {
     width: 100%;
     height: auto;
 }
