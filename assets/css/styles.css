@@ -12,6 +12,34 @@ body {
     margin: 0 auto;
 }
 
+/* -----------------------------------------------BUTTONS */
+
+button {
+    background-color: #1B263B;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    width: 100px;
+    border: 1px solid #e0e1dd80;
+}
+
+button:hover,
+button:active {
+    box-shadow: 0px 0px 5px rgb(224, 225, 221, 0.5);
+    cursor: pointer;
+}
+
+.buttons {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* -----------------------------------------------HERO-SECTION */
 
 
@@ -45,6 +73,81 @@ body {
 p {
     margin: 10px;
     letter-spacing: 2px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    align-items: center;
+}
+
+.up {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3em;
+}
+
+.github {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: #0D1B2A;
+    border-radius: 90px 5px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgb(224, 225, 221, 0.5) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+}
+
+.github i {
+    padding-left: 5px;
+    padding-top: 10px;
+}
+
+.github:hover {
+    scale: 1.1;
+}
+
+.linkedin {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: #0D1B2A;
+    border-radius: 5px 90px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgb(224, 225, 221, 0.5) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+}
+
+.linkedin i {
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.linkedin:hover {
+    scale: 1.1;
+}
+
+.download-button {
+    width: 195px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: #0D1B2A;
+    border-radius: 5px 5px 90px 90px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgb(224, 225, 221, 0.5) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+}
+
+.download-button:hover {
+    scale: 1.1;
+}
+
+.social-media-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 
@@ -100,6 +203,7 @@ h3 {
     width: 100%;
     height: auto;
     border-radius: 15px 15px 0 0;
+    transition: .2s ease-in-out;
 }
 
 .project-img:hover {
@@ -129,37 +233,9 @@ figcaption {
     padding: 5px;
 }
 
-/* -----------------------------------------------BUTTONS */
-
-button {
-    background-color: #1B263B;
-    padding: 10px;
-    border-radius: 5px;
-    margin: 5px;
-    width: 100px;
-    border: 1px solid #e0e1dd80;
-}
-
-button:hover,
-button:active {
-    box-shadow: 0px 0px 5px rgb(224, 225, 221, 0.5);
-    cursor: pointer;
-}
-
-.buttons {
-    margin-top: 100px;
-    margin-bottom: 50px;
-}
-
-.flex-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 /* -----------------------------------------------MEDIA QUERY */
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 426px) {
     .self-portrait {
         width: 250px;
         height: 250px;
