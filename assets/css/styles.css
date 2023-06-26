@@ -5,6 +5,10 @@
     color: #E0E1DD;
 }
 
+html {
+    font-size: 16px;
+}
+
 body {
     background-color: #212121;
     min-width: 320px;
@@ -29,11 +33,6 @@ button:active {
     cursor: pointer;
 }
 
-.buttons {
-    margin-top: 100px;
-    margin-bottom: 50px;
-}
-
 .flex-center {
     display: flex;
     flex-direction: column;
@@ -45,6 +44,7 @@ button:active {
 
 .hero-section {
     position: relative;
+    margin-bottom: 20%;
 }
 
 .banner {
@@ -74,6 +74,7 @@ button:active {
 p {
     margin: 10px;
     letter-spacing: 2px;
+    font-size: 1.5rem;
 }
 
 .main {
@@ -198,17 +199,22 @@ h3 {
     background-color: #1B263B;
     margin-top: 5px;
     border-radius: 15px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 .project-img {
     width: 100%;
-    height: auto;
+    height: 200px;
+    max-height: 400px;
+    object-fit: cover;
     border-radius: 15px 15px 0 0;
     transition: .2s ease-in-out;
+    grid-row: 1;
 }
 
 .project-img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 a {
@@ -228,27 +234,36 @@ a {
 
 .project div {
     margin: 5px;
+    grid-row: 3;
 }
 
 figcaption {
     padding: 5px;
+    grid-row: 2;
 }
 
 /* -----------------------------------------------MEDIA QUERY */
 
-@media screen and (min-width: 426px) {
+@media (max-width: 425px) {
+    .self-portrait {
+        /* smaller size for narrow screens */
+        bottom: -50px;
+        width: 100px;
+        height: 100px;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 1024px) {
     .self-portrait {
         width: 250px;
         height: 250px;
         bottom: -125px;
     }
 
-    .buttons {
-        margin-top: 15%;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
 
     .download-button {
         padding: 20px;
@@ -256,6 +271,47 @@ figcaption {
 
     .social-media-buttons {
         padding: 20px;
+    }
+
+    p {
+        font-size: 1.7rem;
+    }
+
+}
+
+@media screen and (min-width: 2560px) {
+    .self-portrait {
+        width: 300px;
+        height: 300px;
+        bottom: -150px;
+    }
+
+    .introduction {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 2rem;
+        margin: 5%;
+    }
+
+    p {
+        font-size: 3rem;
+    }
+
+    .social-media-buttons {
+        width: 200px;
+        height: 100px;
+        font-size: 1.5rem;
+    }
+
+    .download-button {
+        width: 410px;
+        height: 100px;
+        font-size: 1.5rem;
+    }
+
+    .skills {
+        font-size: 2rem;
     }
 
 }
