@@ -7,6 +7,7 @@
 
 body {
     background-color: #0D1B2A;
+    background-color: #212121;
     min-width: 320px;
     max-width: 2560px;
     margin: 0 auto;
@@ -183,7 +184,7 @@ h3 {
 /* -----------------------------------------------PROJECTS */
 
 .projects {
-    background-color: #778da9;
+    background-color: #415a77;
     display: grid;
     margin-top: 60px;
     text-align: center;
